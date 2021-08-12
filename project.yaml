@@ -2,6 +2,7 @@ kind: project
 metadata:
   name: pipe
 spec:
+  description: test
   params:
     label_column: label
   functions:
