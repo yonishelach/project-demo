@@ -9,6 +9,7 @@ spec:
     name: prep-data
     image: mlrun/mlrun
     handler: prep_data
+    with_repo: true
   - url: hub://sklearn_classifier
     name: train
   - url: hub://test_classifier
