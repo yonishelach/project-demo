@@ -25,3 +25,4 @@ jobs:
         MLRUN_DBPATH: ${{ secrets.MLRUN_DBPATH }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        CMD: ${{ github.event.comment.body}}
