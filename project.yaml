@@ -30,6 +30,10 @@ spec:
   - name: newflow
     path: ./newflow.py
     handler: newpipe
+  - name: main-scheduled
+    path: ./kflow.py
+    engine: kfp
+    schedule: '*/30 * * * *'
   artifacts:
   - kind: ''
     target_path: https://s3.wasabisys.com/iguazio/data/iris/iris.data.raw.csv
